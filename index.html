@@ -4,122 +4,212 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="homepage.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:wght@100;300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/090ced38b4.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="/assets/bookstore-logo.jpg" >
   <title>RMIT Bookstore</title>
 </head>
 <body>
   <header>
-    <a href="/index.html">
-      <img class="main-logo" src="/assets/bookstore-logo.jpg" alt="Bookstore Logo" />
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <div class="dropdown">
-            <button class="dropbtn">Category</button>
-            <div class="dropdown-content">
-              <a href="/categories/children.html">Children's book</a>
-              <a href="/categories/fiction.html">Fiction</a>
+    <div class="header-container row d-flex flex-row align-items-center">
+      <a class="clear-style d-flex flex-row align-items-center" href="/index.html">
+        <img class="main-logo" src="/assets/bookstore-logo.jpg" alt="Bookstore Logo" />
+        <h3 class="d-inline-block secondary-font">Bookstore</h1>
+      </a>
+      <input class="search-book" placeholder="Search books, author, ISBNs">
+      <nav>
+        <ul class="d-flex flex-row justify-content-end">
+          <li>
+            <div class="dropdown">
+              <p class="dropbtn">Category</p>
+              <div class="dropdown-content">
+                <a class="clear-style" href="/categories/children.html">Children's book</a>
+                <a class="clear-style" href="/categories/fiction.html">Fiction</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="breadcrumb-container">
-      <nav>
-        <a class="breadcrumb">Home</a>
-      </nav>
-    </div>
-
-    <section class="book-showcase-container">
-      <h3>Children's book</h3>
-      <div class="book-list-container">
-        <a href="/bookDetail.html" class="book_detail">
-          <figure>
-            <img src="" />
-            <figcaption>Image 1</figcaption>
-          </figure>
-        </a>
-
-        <a href="/bookDetail.html" class="book_detail">
-          <figure>
-            <img src="" />
-            <figcaption>Image 1</figcaption>
-          </figure>
-        </a>
-
-        <a href="/bookDetail.html" class="book_detail">
-          <figure>
-            <img src="" />
-            <figcaption>Image 2</figcaption>
-          </figure>
-        </a>
-      </div>
-
-      <a href="/categories/fiction.html">Read more</a>
-    </section>
-
-    <section class="book-showcase-container">
-      <h3>Fiction</h3>
-
-      <div class="book-list-container">
-        <a href="/bookDetail.html" class="book_detail">
-          <figure>
-            <img src="" />
-            <figcaption>Image 1</figcaption>
-          </figure>
-        </a>
-
-        <a href="/bookDetail.html" class="book_detail">
-          <figure>
-            <img src="" />
-            <figcaption>Image 1</figcaption>
-          </figure>
-        </a>
-
-        <a href="/bookDetail.html" class="book_detail">
-          <figure>
-            <img src="" />
-            <figcaption>Image 2</figcaption>
-          </figure>
-        </a>
-      </div>
-
-      <a href="/category.html">Read more</a>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <address>
-        12 Le Thi Kinh, Phuoc Kien, Nha Be
-        Ho CHi Minh city
-      </address>
-    </div>
-
-    <div class="footer-nav-col">
-      <nav>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Copyright</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
+          </li>
+          <li>
+            <a class="d-inline-block clear-style" href="/contact.html">
+              <p>Contact</p>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
-    
-    <div>
-      <h5>Follow us</h5>
-      <ul>
-        <li><a><i class="fa-brands fa-square-facebook"></i></a></li>
-        <li><a><i class="fa-brands fa-square-instagram"></i></a></li>
-      </ul>
+  </header>
+
+  <main class="row">
+
+    <section class="book-showcase-container">
+      <h2 class="secondary-font">Food</h2>
+      <div class="book-list-container d-flex flex-row">
+        <a href="/bookDetails/foodBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Food1.jpeg" alt="Food book 1" />
+            <figcaption>
+              <p class="subtitle-1 book-header">A New Way to Food: 100 Recipes to Encourage a Healthy Relationship with Food, Nourish Your Beautiful Body, and Celebrate Real Wellness for Life</p>
+              <p class="subtitle-2">by Maggie Battista</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/foodBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Food2.jpeg" alt="Food book 2" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Food Styling: The Art of Preparing Food for The Camera</p>
+              <p class="subtitle-2">by Delores Custer</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/foodBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Food3.webp" alt="Food book 3" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Cook Book: Over 100 Recipes, Tips & Techniques</p>
+              <p class="subtitle-2">by Juliana Silva</p>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <a class="read-more" href="/categories/food.html">
+        <h4>Read more</h4>
+        <i class="fa-solid fa-chevron-down size-medium" style="color: rebeccapurple"></i>
+      </a>
+    </section>
+
+    <section class="book-showcase-container">
+      <h2 class="secondary-font">Mystery</h2>
+      <div class="book-list-container d-flex flex-row">
+        <a href="/bookDetails/mysteryBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Mystery1.webp" alt="Mystery book 1" />
+            <figcaption>
+              <p class="subtitle-1 book-header">DON'T GO THERE: just when you though it was safe..</p>
+              <p class="subtitle-2">by Juliana Silva</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/mysteryBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Mystery2.webp" alt="Mystery book 2" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Thread</p>
+              <p class="subtitle-2">by Olivia Wilson</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/mysteryBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Mystery3.jpg" alt="Mystery book 3" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Murder in a Mountain Hut</p>
+              <p class="subtitle-2">by John Baker</p>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <a class="read-more" href="/categories/mystery.html">
+        <h4>Read more</h4>
+        <i class="fa-solid fa-chevron-down size-medium" style="color: rebeccapurple"></i>
+      </a>
+    </section>
+
+    <section class="book-showcase-container">
+      <h2 class="secondary-font">Children's book</h2>
+      <div class="book-list-container d-flex flex-row">
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Children1.jpg" alt="Children book 1" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Think Like a Detective: A Kid's Guide to Critical Thinking</p>
+              <p class="subtitle-2">by David Pakman</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Children2.jpg" alt="Children book 2" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Matt Sprouts and the Curse of the Ten Broken Toes (Volume 1)</p>
+              <p class="subtitle-2">by Matthew Eicheldinger</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/Children3.jpg" alt="Children book 3" />
+            <figcaption>
+              <p class="subtitle-1 book-header">No Brainer (Diary of a Wimpy Kid Book 18)</p>
+              <p class="subtitle-2">by Jeff Kinney</p>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <a class="read-more" href="/categories/children.html">
+        <h4>Read more</h4>
+        <i class="fa-solid fa-chevron-down size-medium" style="color: rebeccapurple"></i>
+      </a>
+    </section>
+
+    <a class="more-categories" href="#">
+      <h3 class="secondary-font">More Categories</h3>
+    </a>
+  </main>
+
+  <footer>
+    <div class="row d-flex flex-row">
+      <div>
+        <h4>Address</h4>
+        <address>
+          702 Nguyen Van Linh, Tan Hung Ward, District 7<br/>
+          Ho Chi Minh City, Viet Nam
+        </address>
+
+      </div>
+
+      <div class="footer-nav-col">
+        <nav>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div>
+        <h4>Follow us</h5>
+        <ul>
+          <li class="d-inline">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-square-facebook size-medium"></i>
+            </a>
+          </li>
+          <li class="d-inline">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-square-instagram size-medium"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
