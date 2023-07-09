@@ -4,124 +4,184 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="default.css">
+
+  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="/css/homepage.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:wght@100;300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/090ced38b4.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="/assets/bookstore-logo.jpg">
   <title>Children's books</title>
 </head>
 <body>
   <header>
-    <a href="/index.html">
-      <img class="main-logo" src="/assets/bookstore-logo.jpg" alt="Bookstore Logo" />
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <div class="dropdown">
-            <button class="dropbtn">Category</button>
-            <div class="dropdown-content">
-              <a href="/categories/children.html">Children's book</a>
-              <a href="/categories/fiction.html">Fiction</a>
+    <div class="header-container row d-flex flex-row align-items-stretch">
+      <a class="clear-style d-flex flex-row align-items-center" href="/index.html">
+        <img class="main-logo" src="/assets/bookstore-logo.jpg" alt="Bookstore Logo" />
+        <h3 class="d-inline-block secondary-font">Bookstore</h3>
+      </a>
+      <div class="search-container">
+        <input class="search-book" placeholder="Search books, author, ISBNs">
+        <i class="fa-solid fa-magnifying-glass" style="color: grey;"></i>
+      </div>
+      <nav class="d-block">
+        <ul class="d-flex flex-row justify-content-end align-items-stretch height-100">
+          <li>
+            <div class="dropdown height-100 d-flex align-items-center">
+              <p class="dropbtn">Category</p>
+              <div class="dropdown-content">
+                <a class="clear-style" href="/categories/food.html">Food</a>
+                <a class="clear-style" href="/categories/children.html">Children's book</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div>
-      <nav>
-        <a class="breadcrumb">Home</a>
-        <i class="fa-solid fa-chevron-right"></i>
-        <a class="breadcrumb">Fiction</a>
-      </nav>
-    </div>
-  </main>
-
-  <section class="book-showcase-container">
-    <h3>Children's book</h3>
-
-    <div class="book-list-container">
-      <a href="/bookDetail.html" class="book_detail">
-        <figure>
-          <img src="" />
-          <figcaption>Image 1</figcaption>
-        </figure>
-      </a>
-
-      <a href="/bookDetail.html" class="book_detail">
-        <figure>
-          <img src="" />
-          <figcaption>Image 1</figcaption>
-        </figure>
-      </a>
-
-      <a href="/bookDetail.html" class="book_detail">
-        <figure>
-          <img src="" />
-          <figcaption>Image 2</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <a href="/category.html">Read more</a>
-  </section>
-
-  <section class="book-showcase-container">
-    <h3>Children's book</h3>
-
-    <div class="book-list-container">
-      <a href="/bookDetail.html" class="book_detail">
-        <figure>
-          <img src="" />
-          <figcaption>Image 1</figcaption>
-        </figure>
-      </a>
-
-      <a href="/bookDetail.html" class="book_detail">
-        <figure>
-          <img src="" />
-          <figcaption>Image 1</figcaption>
-        </figure>
-      </a>
-
-      <a href="/bookDetail.html" class="book_detail">
-        <figure>
-          <img src="" />
-          <figcaption>Image 2</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <a href="/category.html">Read more</a>
-  </section>
-
-  <footer>
-    <div>
-      <address>
-        12 Le Thi Kinh, Phuoc Kien, Nha Be
-        Ho CHi Minh city
-      </address>
-    </div>
-
-    <div class="footer-nav-col">
-      <nav>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Copyright</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
+          </li>
+          <li class="d-flex align-items-center">
+            <a class="d-inline-block clear-style" href="/contact.html">
+              <p>Contact</p>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
+  </header>
 
-    <div>
-      <h5>Follow us</h5>
-      <ul>
-        <li><a><i class="fa-brands fa-square-facebook"></i></a></li>
-        <li><a><i class="fa-brands fa-square-instagram"></i></a></li>
-      </ul>
+  <div class="breadcrumb">
+    <nav class="row">
+      <a href="/index.html">Home</a>
+      <i class="fa-solid fa-chevron-right fa-xs"></i>
+      <a href="/categories/children.html">Children's Book</a>
+    </nav>
+  </div>
+
+  <article class="row">
+    <h1 class="secondary-font" style="text-align: center;">Children's Book</h1>
+
+    <section class="book-showcase-container">
+      <a class="clear-style" href="#">
+        <h2 class="secondary-font">Growing Up & Facts of Life</h2>
+      </a>
+      <div class="book-list-container d-flex flex-row">
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/ChildrenGrowUp1.jpg" alt="Children Growing Up book 1" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Ricky, the Rock That Couldn't Roll</p>
+              <p class="subtitle-2">by Jay Miletsky</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/ChildrenGrowUp2.jpg" alt="Children Growing Up book 2" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Think Like a Detective: A Kid's Guide to Critical Thinking</p>
+              <p class="subtitle-2">by Delores Custer</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/ChildrenGrowUp3.webp" alt="Children Growing Up book 3" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Our Class is a Family</p>
+              <p class="subtitle-2">by Shannon Olsen</p>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <a class="read-more" href="#">
+        <h4>Read more</h4>
+        <i class="fa-solid fa-chevron-down size-medium" style="color: rebeccapurple"></i>
+      </a>
+    </section>
+
+    <section class="book-showcase-container">
+      <a class="clear-style" href="#">
+        <h2 class="secondary-font">Humor</h2>
+      </a>
+      <div class="book-list-container d-flex flex-row">
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/ChildrenHumor1.webp" alt="Children Humor book 1" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Don't Let the Pigeon Drive the Sleigh!</p>
+              <p class="subtitle-2">by Mo Willems</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/ChildrenHumor2.jpg" alt="Children Humor book 2" />
+            <figcaption>
+              <p class="subtitle-1 book-header">Matt Sprouts and the Curse of the Ten Broken Toes (Volume 1)</p>
+              <p class="subtitle-2">by Matthew Eicheldinger</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="/bookDetails/childrenBook.html" class="book-detail">
+          <figure>
+            <img src="/assets/ChildrenHumor3.jpg" alt="Children Humor book 3" />
+            <figcaption>
+              <p class="subtitle-1 book-header">No Brainer (Diary of a Wimpy Kid Book 18)</p>
+              <p class="subtitle-2">by Jeff Kinney</p>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <a class="read-more" href="#">
+        <h4>Read more</h4>
+        <i class="fa-solid fa-chevron-down size-medium" style="color: rebeccapurple"></i>
+      </a>
+    </section>
+  </article>
+
+  <footer>
+    <div class="row d-flex flex-row">
+      <div>
+        <h4>Address</h4>
+        <address>
+          702 Nguyen Van Linh, Tan Hung Ward, District 7<br/>
+          Ho Chi Minh City, Viet Nam
+        </address>
+
+      </div>
+
+      <div class="footer-nav-col">
+        <nav>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div>
+        <h4>Follow us</h5>
+        <ul>
+          <li class="d-inline">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-square-facebook size-medium"></i>
+            </a>
+          </li>
+          <li class="d-inline">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-square-instagram size-medium"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
