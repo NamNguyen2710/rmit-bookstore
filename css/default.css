@@ -135,11 +135,6 @@ a.clear-style:visited {
 
 .dropdown {
   position: relative;
-  display: inline-block;
-}
-
-.dropbtn {
-  border: none;
 }
 
 .dropdown-content {
@@ -147,7 +142,7 @@ a.clear-style:visited {
   position: absolute;
   z-index: 10;
   top: 100%;
-  border: solid 1px gray;
+  left: 0;
   width: auto;
 }
 
@@ -180,22 +175,54 @@ header {
   flex: 1 1 33%;
 }
 
-header li > * {
+header nav ul li > * {
   padding: 16px 20px;
 }
+header nav ul li:hover,
+header nav ul li:focus {
+  border-bottom: solid 0.3rem rebeccapurple;
+}
 header .dropdown-content{
-
+  background-color: rgb(242, 242, 242);
+  top: 102%;
+  min-width: 100%;
 }
 
 header .main-logo {
   height: 80px;  
 }
 
+header .search-container {
+  position: relative;
+}
+header .search-container > * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 header input.search-book {
   background-color: white;
   height: 4rem;
+  width: 100%;
   padding: 0 20px;
   border-radius: 1000px;
+}
+header .search-container i {
+  right: 15px;
+}
+
+.breadcrumb {
+  padding: 5px 0;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+.breadcrumb nav {
+  padding: 0 50px;
+}
+.breadcrumb a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
 }
 
 footer {
